@@ -247,7 +247,7 @@
       document.getElementById('biuuu_city_list').innerHTML = function(){
         var arr = []
         ,thisData = data.concat().splice(obj.curr*obj.limit - obj.limit, obj.limit);
-        layui.each(thisData, function(index, item){
+        laypage.each(thisData, function(index, item){
           arr.push('<li>'+ item +'</li>');
         });
         return arr.join('');
